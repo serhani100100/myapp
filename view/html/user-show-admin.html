@@ -1,0 +1,27 @@
+<h5>User List</h5>
+
+<div class="table-responsive-sm">
+    <button type="button" class="btn btn-sm" onclick="location.href = '#URL##MODULE#/create'">Create</button>
+    <table class="table table-sm">
+        <thead class="table-light">
+            <tr>
+                <th scope="col" width ="40%">Username</th>
+                <th scope="col" width ="40%">Password</th>
+                <th scope="col" width ="20%" align="center">Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><a href="#URL##MODULE#/read/#ID#">#USERNAME#</a></th>
+                <td>#PASSWORD#</td>
+                <td>
+                    <button type="button" class="btn btn-sm" onclick="location.href='#URL##MODULE#/update/#ID#'">
+                        Update</button>
+                    <button type="button" class="btn btn-sm" onclick="location.href='#URL##MODULE#/delete/#ID#'">
+                        Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

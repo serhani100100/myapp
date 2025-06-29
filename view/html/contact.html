@@ -1,0 +1,30 @@
+<form action="#URL#Main/send/contact" method="post" name="contact">
+    <div class="form-group">
+        <label for="fldName">Name</label>
+        <input type="name" class="form-control" id="fldName" name="name" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+        <label for="fldEmail">Email address</label>
+        <input type="email" class="form-control" id="fldEmail" name="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="fldMessage">Message</label>
+        <textarea class="form-control" id="Message" name="message" rows="3"></textarea>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="fldCopy" name="copy">
+        <label class="form-check-label" for="fldCopy">Send me a copy of this message</label>
+    </div>
+    <button type="submit" onclick="return IsEmpty();" class="btn btn-primary">Send</button>
+</form>
+
+<script type="text/javascript">
+    function IsEmpty() {
+        if (document.forms['contact'].name.value ==="") {
+            alert ("Name is empty");
+            return false;
+        }
+        return true;
+    }
+
+</script>
